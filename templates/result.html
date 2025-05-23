@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Result</title>
+  <style>
+    .pass { color: green; font-weight: bold; }
+    .fail { color: red; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h2>Student Result</h2>
+  <p><strong>Marks:</strong> {{ scores }}</p>
+  <p class="{{ 'pass' if results == 'Pass' else 'fail' }}">Result: {{ results }}</p>
+</body>
+</html>
